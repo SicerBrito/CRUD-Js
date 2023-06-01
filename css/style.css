@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.container{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+.container h1{
+    font-size: 4rem;
+    margin-bottom: 40px;
+    text-shadow: 4px 4px #61dafb;
+    transform: translateX(0px);
+    animation: float 4s ease-in infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.container input[type="text"],.container input[type="email"],.container textarea[id="mensaje"]{
+    background: none;
+    color: white;
+}
+
+.div-listado{
+    margin-top: 50px;
+}
+
+.div-listado h2{
+    font-size: 3.5rem;
+    text-shadow: 4px 4px #61dafb;
+    transform: translateX(0px);
+    animation: float2 4s ease-in infinite;
+}
+
+@keyframes float2 {
+    0% {
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
