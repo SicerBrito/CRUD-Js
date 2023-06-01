@@ -18,11 +18,22 @@ body{
     align-items: center;
     text-align: center;
     flex-direction: column;
-    width: 50%;
+    max-width: 100%;
     color: #fff;
     position: absolute;
     top: 25%;
-    left: 25%;
+}
+
+
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 65%;
+    width: 100%;
 }
 
 .container h1{
@@ -49,9 +60,6 @@ body{
     color: white;
 }
 
-.div-listado{
-    margin-top: 50px;
-}
 
 .div-listado h2{
     font-size: 3.5rem;
@@ -69,5 +77,51 @@ body{
     }
     100%{
         transform: translateX(0px);
+    }
+}
+
+@media screen and (min-width: 866px)  and (max-width: 1650px) {
+    .container2{
+        top: 70%;
+    }
+}
+
+@media screen and (min-width: 476px) and (max-width: 865px) {
+    .container{
+        top: 15%;
+    }
+    .container2{
+        top: 70%;
+    }
+}
+
+
+@media screen and (min-width: 366px) and (max-width: 475px) {
+    .container{
+        top: 15%;
+    }
+    .container h1{
+        font-size: 3rem;
+    }
+    .container2{
+        top: 64%;
+    }
+    .div-listado h2{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .container{
+        top: 15%;
+    }
+    .container h1{
+        font-size: 2.8rem;
+    }
+    .container2{
+        top: 66%;
+    }
+    .div-listado h2{
+        font-size: 2.6rem;
     }
 }
